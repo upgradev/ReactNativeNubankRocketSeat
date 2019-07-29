@@ -1,0 +1,43 @@
+Para Android / For Android
+
+instalar para os gestos na tela
+install for the gesture in the screen
+
+yarn add react-native-gesture-handler
+
+
+colocar no arquivo MainActivity.java
+put in the file MainActivity.java
+
+import com.facebook.react.ReactActivityDelegate;
+import com.facebook.react.ReactRootView;
+import com.swmansion.gesturehandler.react.RNGestureHandlerEnabledRootView;
+
+  @Override
+  protected ReactActivityDelegate createReactActivityDelegate() {
+    return new ReactActivityDelegate(this, getMainComponentName()) {
+      @Override
+      protected ReactRootView createRootView() {
+       return new RNGestureHandlerEnabledRootView(MainActivity.this);
+      }
+    };
+  }
+
+instalar icones 
+install icon
+yarn add react-native-vector-icons
+react-native link react-native-vector-icons
+
+estrutura pre pronta pela rocketseat
+pre ready structure
+react-native init nomeDoProjeto --template rocketseat-basic
+
+pacote adicional
+yarn add react-native-iphone-x-helper
+
+QrCode in the react native
+yarn add react-native-qrcode
+
+Problemas com qrcode executar o comando:
+problems with qrcode run the command:
+npm install --save wanxsb/react-native-qrcode#1a08f9cedcb747fd230be717fe815c686e4427cb react-native-webview 
